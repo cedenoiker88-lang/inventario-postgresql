@@ -14,9 +14,9 @@ PostgreSQL 14+ · SQL · PL/pgSQL · pgAdmin 4
 ## Cómo ejecutarlo
 1. Abre **pgAdmin 4** y crea una base de datos llamada `inventario_portafolio`.
 2. Selecciona la base de datos y abre **Query Tool**.
-3. Abre y ejecuta `sql/01_schema.sql`.
-4. Abre y ejecuta `sql/02_datos_demo.sql` (reinicia los datos de prueba cada vez que se ejecuta).
-5. Abre y ejecuta `sql/03_reportes.sql`. Puedes ejecutar cada `SELECT` por separado para ver cada reporte.
+3. Abre y ejecuta `01_schema.sql`.
+4. Abre y ejecuta `02_datos_demo.sql` (reinicia los datos de prueba cada vez que se ejecuta).
+5. Abre y ejecuta `03_reportes.sql`. Puedes ejecutar cada `SELECT` por separado para ver cada reporte.
 
 > Advertencia: el archivo `02_datos_demo.sql` usa `TRUNCATE`; ejecútalo solo en la base de datos de prueba, nunca sobre datos reales.
 
@@ -36,11 +36,9 @@ SELECT sku, nombre, stock FROM productos ORDER BY id;
 ```text
 inventario-postgresql/
 ├── README.md
-├── .gitignore
-└── sql/
-    ├── 01_schema.sql
-    ├── 02_datos_demo.sql
-    └── 03_reportes.sql
+├── 01_schema.sql
+├── 02_datos_demo.sql
+└── 03_reportes.sql
 ```
 
 ## Próximas mejoras
@@ -52,4 +50,6 @@ inventario-postgresql/
 Después de ejecutar el proyecto, agrega capturas de la estructura de tablas y de los reportes de pgAdmin. No incluyas contraseñas ni información privada.
 
 ## Autor
-Sustituye esta sección por tu nombre profesional y enlace de GitHub.
+Estudiante de Ingeniería en Software.
+
+GitHub: https://github.com/cedenoiker88-lang
